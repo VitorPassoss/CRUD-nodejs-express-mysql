@@ -1,8 +1,8 @@
 const mysql = require('mysql');
 const db = mysql.createConnection({
     host: 'sql.freedb.tech',
-    user:'freedb_vitordbdb',
-    password:'XV%eA2CXAh4*%Vz',
+    user:'freedb_freedb_vitordbdb',
+    password:'W6EcV9ycC4#2!r?',
     port:3306,
     database:'freedb_postsdb',
     multipleStatements: true

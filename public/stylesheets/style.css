@@ -1,0 +1,99 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+body {
+ 
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #18191a !important;
+  color: white;
+  
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #18191a;
+  
+ 
+}
+
+.formdiv{
+  color: white;
+  width: 40%;
+  background-color:#242526;
+  padding: 40px;
+  border-radius: 25px;
+  
+}
+
+.colorName{
+  color:white;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.postFeed{
+  
+  width: 40%;
+  height: 100vh;
+  background-color: #18191a;
+
+}
+
+.colorbg{
+  background-color: #242526 !important;
+  color: white;
+  
+}
+
+.card-title{
+  text-align: left;
+  margin-top: 10px;
+}
+.card-text{
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.img-name{
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+.divformcenter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.tittle-feed{
+  color: white;
+  font-size: 35px;
+}
+
+.options{
+  position: absolute;
+  left: 85%;
+}
+
+.options a{
+  font-size: 20px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.btn{
+  margin-top: 20px;
+}

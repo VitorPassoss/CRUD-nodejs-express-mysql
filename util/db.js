@@ -1,10 +1,10 @@
 const mysql = require('mysql');
 const db = mysql.createConnection({
-    host: 'localhost',
-    user:'root',
-    password:'0811',
+    host: 'sql.freedb.tech',
+    user:'freedb_freedb_postdb',
+    password:'?HTzNF%A63DhwdM',
     port:3306,
-    database:'posts',
+    database:'freedb_postsdb',
     multipleStatements: true
 });
 db.connect((erro) => {

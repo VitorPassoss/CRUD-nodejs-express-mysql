@@ -1,7 +1,7 @@
 const mysql = require('mysql');
 const db = mysql.createConnection({
     host: 'sql.freedb.tech',
-    user:'freedb_freedb_postdb',
+    user:'freedb_freedb_postsdb',
     password:'?HTzNF%A63DhwdM',
     port:3306,
     database:'freedb_postsdb',

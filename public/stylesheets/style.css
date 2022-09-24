@@ -43,7 +43,7 @@ a {
 
 .postFeed{
   
-  width: 40%;
+  width: 50%;
   height: 100vh;
   background-color: #18191a;
 
@@ -57,11 +57,16 @@ a {
 
 .card-title{
   text-align: left;
-  margin-top: 10px;
+  padding-top: 10px;
+
 }
 .card-text{
   font-size: 16px;
-  margin-top: 5px;
+  bottom: 12px;
+  position: relative;
+  left: 12px;
+ 
+  
 }
 
 .img-name{
@@ -96,4 +101,16 @@ a {
 
 .btn{
   margin-top: 20px;
+}
+
+.centerimg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgpost{
+  width: 600px;
+  padding: 20px;
+  
 }

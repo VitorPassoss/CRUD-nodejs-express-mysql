@@ -23,7 +23,7 @@ router.get('/add', function(req, res, next) {
 
 router.post('/add', function(req, res, next) {
 
-  db.query('insert into postuser(titulo,textUser,nomeUser) values(?,?,?);',[req.body.titulo, req.body.post, req.body.nomeUser],
+  db.query('insert into postuser(titulo,textUser,nomeUser,imagem) values(?,?,?,?);',[req.body.titulo, req.body.post, req.body.nomeUser,req.body.imagem],
   function(erro){
     if(erro){
       res.status(200).send('erro na criação do post' + erro)
@@ -48,7 +48,7 @@ router.get('/edit/:id',function(req,res,next){
 
 router.post('/edit/:id', function(req, res, next) {
 
-  db.query('update postuser SET nomeUser = ? , titulo = ? , textUser = ?  where id = ?',[req.body.nomeUser,req.body.titulo, req.body.post,req.params.id],
+  db.query('update postuser SET nomeUser = ? , titulo = ? , textUser = ? , imagem = ?  where id = ?',[req.body.nomeUser,req.body.titulo, req.body.post,req.body.imagem,req.params.id],
   function(erro){
     if(erro){
       res.status(200).send('erro na criação do post' + erro)

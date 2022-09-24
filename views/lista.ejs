@@ -24,7 +24,7 @@
         <% for(item of listaDados){ %>
 
             <div class="center">
-                <div class="card colorbg mb-3 mt-3" style="max-width: 640px; width: 95%; height: 100%; margin-top: 20px;" >
+                <div class="card colorbg mb-3 mt-3" style="max-width: 750px; width: 100%; height: 100%; margin-top: 0px; padding:5px ;" >
                     <div class="row g-0">
                    
                     <div class="col-md-8">
@@ -36,20 +36,25 @@
                            <h2 class="colorName"><%= item.nomeUser %></h2>
                            <div class="options">
                                 
-                                <a href="/excluir/<%= item.id %>"><i class="bi bi-trash"></i></a>
-                                <a href="/edit/<%= item.id %>"><i class="bi bi-pencil-fill"></i></a>
+                                <a href="/excluir/<%=item.id%>"><i class="bi bi-trash"></i></a>
+                                <a href="/edit/<%=item.id %>"><i class="bi bi-pencil-fill"></i></a>
                            </div>
                            
                         </div>
-                        <h5 class="card-title"><strong><%= item.titulo %> </strong>  
-                    </table>  </h5>
-                        <p class="card-text lead"><%= item.textUser %>  </p>
+                        <h5 class="card-title"><strong><%= item.titulo %> </strong> </h5>
+                        
                         
                         </div>
                     </div>
+                    <p class="card-text lead"><%= item.textUser %>  </p>
                     </div>
+
+                    <div class="centerimg">
+                        <img class="imgpost" src="<%= item.imagem %>" alt="">
+                    </div>
+
                 </div>
-        
+         
                 
         
             </div>

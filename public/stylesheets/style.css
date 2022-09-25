@@ -54,17 +54,31 @@ a {
   color: white;
   
 }
+.card{
+  max-width: 900px; width: 100%; height: 100%; margin-top: 0px; padding:10px ;
+}
 
+.color-bg{
+  background-color: #474747 !important;
+}
+
+.navflex{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
 .card-title{
   text-align: left;
   padding-top: 10px;
-
+  
+   
 }
 .card-text{
-  font-size: 16px;
+  font-size: 14px;
   bottom: 12px;
   position: relative;
-  left: 12px;
+  left: 7px;
  
   
 }
@@ -85,6 +99,7 @@ a {
 .tittle-feed{
   color: white;
   font-size: 35px;
+  display: none;
 }
 
 .options{
@@ -110,7 +125,47 @@ a {
 }
 
 .imgpost{
-  width: 600px;
+  width: 100%;
   padding: 20px;
   
+}
+
+
+.img-icon{
+  width: 6%;
+   height: 30px; 
+   border-radius: 100%;
+}
+
+@media (max-width: 576px){
+  .btn{
+    margin-top: 80px;
+  }
+  
+  .postFeed{
+  
+    width: 90%;
+    height: 100vh;
+    background-color: #18191a;
+  
+  }
+  .img-icon{
+    width: 6%;
+     height: 25px; 
+     border-radius: 100%;
+  }
+
+  
+  .card-title{
+    text-align: left;
+    padding-top: 10px;
+    font-size: 15px;
+     
+  }
+
+
+  .lead{
+    font-size: 14px !important;
+  }
+
 }

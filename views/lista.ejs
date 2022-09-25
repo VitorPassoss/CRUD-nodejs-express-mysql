@@ -5,40 +5,27 @@
 
 <div class="center">
     <div class="postFeed">
-
         <div class="center">
             <h1 class="tittle-feed">Blog em Nodejs, Express, MySQL </h1>
-    
-
-
-
-    
         <form action="/add">
             <button type="submit" class="btn btn-dark">Criar um post</button>
         </form>
-
         </div>
-        
-        
-
         <% for(item of listaDados){ %>
-
             <div class="center">
                 <div class="card colorbg mb-3 mt-3" >
                     <div class="row g-0">
-                   
                     <div class="col-md-12">
-                        <h1></h1>
                         <div class="card-body">
-                            
                         <div class="img-name">
                           <img class="img-icon" src="https://cdn-icons-png.flaticon.com/512/149/149071.png"  alt=""> 
                            <h2 class="colorName"><%= item.nomeUser %></h2>
+                           <% if(item.id != 18 & item.id != 19){ %>
                            <div class="options">
-                                
                                 <a href="/excluir/<%=item.id%>"><i class="bi bi-trash"></i></a>
                                 <a href="/edit/<%=item.id %>"><i class="bi bi-pencil-fill"></i></a>
                            </div>
+                           <%}%> 
                            
                         </div>
                         <h5 class="card-title"><strong><%= item.titulo %> </strong> </h5>
@@ -66,7 +53,7 @@
 </div>
 
 
-  
+    <script src="front.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../assets/js/vendor/popper.min.js"></script>

@@ -28,7 +28,7 @@ a {
 
 .formdiv{
   color: white;
-  width: 100%;
+  width: 40%;
   background-color:#242526;
   padding: 40px;
   border-radius: 25px;
@@ -115,7 +115,7 @@ a {
 }
 
 .btn{
-  margin-top: 20px;
+  margin-top: 70px;
 }
 
 .centerimg{
@@ -138,6 +138,14 @@ a {
 }
 
 @media (max-width: 576px){
+  .formdiv{
+    color: white;
+    width: 100%;
+    background-color:#242526;
+    padding: 40px;
+    border-radius: 25px;
+    
+  }
   .options{
     display: flex;
     flex-direction: row;

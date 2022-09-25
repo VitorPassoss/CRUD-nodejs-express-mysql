@@ -138,6 +138,13 @@ a {
 }
 
 @media (max-width: 576px){
+  .options{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 80%;
+    top: 1%;
+  }
   .btn{
     margin-top: 80px;
   }
